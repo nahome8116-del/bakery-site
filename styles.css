@@ -326,6 +326,7 @@ main { max-width: 1440px; margin: 0 auto; padding: 0 5vw 4rem; }
 .order-panel .eyebrow { color: var(--mist); }
 .form-intro { color: var(--mist); }
 .order-panel form { display: flex; flex-direction: column; }
+.form-field { display: flex; flex-direction: column; }
 .order-panel label { margin-top: .75rem; color: var(--mist); font-size: .85rem; font-weight: 700; }
 .order-panel label span { color: var(--mist); }
 .order-panel label .optional { color: var(--mist); font-weight: 400; }
@@ -342,6 +343,16 @@ main { max-width: 1440px; margin: 0 auto; padding: 0 5vw 4rem; }
 }
 .order-panel textarea { resize: vertical; }
 .order-panel input:focus, .order-panel textarea:focus, .order-panel select:focus { outline: 3px solid var(--blue); outline-offset: 2px; }
+.order-panel [aria-invalid="true"] { border: 2px solid var(--blue); }
+.form-feedback {
+  margin: .8rem 0 .25rem;
+  padding: .7rem .85rem;
+  border-left: 3px solid var(--blue);
+  color: var(--mist);
+  font-size: .88rem;
+}
+.form-feedback[hidden], .field-error[hidden] { display: none; }
+.field-error { margin: .3rem 0 0; color: var(--mist); font-size: .82rem; }
 .form-note { margin: 1rem 0 .25rem; color: var(--mist); font-size: .78rem; }
 .order-panel .button { align-self: flex-start; margin-top: .8rem; border-color: var(--mist); background: var(--mist); color: var(--navy); }
 .order-panel .button:hover, .order-panel .button:focus-visible { border-color: var(--blue); background: var(--mist); }

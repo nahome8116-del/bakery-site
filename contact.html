@@ -46,23 +46,38 @@
         <p class="eyebrow">Made for your occasion</p>
         <h2>Send a pre-order request.</h2>
         <p class="form-intro">Tell us what you're dreaming of and we'll be in touch to confirm availability.</p>
-        <form action="mailto:orders@northstarbakery.example" method="post" enctype="text/plain">
-          <label for="name">Your name <span aria-hidden="true">*</span></label>
-          <input id="name" name="name" autocomplete="name" required>
-          <label for="email">Email address <span aria-hidden="true">*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-          <label for="item">What would you like? <span aria-hidden="true">*</span></label>
-          <select id="item" name="item" required>
-            <option value="">Choose a bake</option>
-            <option>Bread</option>
-            <option>Pastries</option>
-            <option>Celebration cake</option>
-            <option>Custom order</option>
-          </select>
-          <label for="date">Preferred pickup date <span aria-hidden="true">*</span></label>
-          <input id="date" name="pickup-date" type="date" required>
-          <label for="details">A few more details <span class="optional">(optional)</span></label>
-          <textarea id="details" name="details" rows="4" placeholder="Quantity, flavors, or anything else we should know"></textarea>
+        <form id="preorder-form" action="mailto:orders@northstarbakery.example" method="post" enctype="text/plain" novalidate>
+          <div class="form-feedback" id="form-feedback" role="alert" aria-live="assertive" tabindex="-1" hidden></div>
+          <div class="form-field">
+            <label for="name">Your name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" autocomplete="name" required>
+            <p class="field-error" id="name-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <p class="field-error" id="email-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="item">What would you like? <span aria-hidden="true">*</span></label>
+            <select id="item" name="item" required>
+              <option value="">Choose a bake</option>
+              <option>Bread</option>
+              <option>Pastries</option>
+              <option>Celebration cake</option>
+              <option>Custom order</option>
+            </select>
+            <p class="field-error" id="item-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="date">Preferred pickup date <span aria-hidden="true">*</span></label>
+            <input id="date" name="pickup-date" type="date" required>
+            <p class="field-error" id="date-error" hidden></p>
+          </div>
+          <div class="form-field">
+            <label for="details">A few more details <span class="optional">(optional)</span></label>
+            <textarea id="details" name="details" rows="4" placeholder="Quantity, flavors, or anything else we should know"></textarea>
+          </div>
           <p class="form-note">This preview uses a placeholder bakery email address. Connect a real email or ordering service before accepting requests.</p>
           <button class="button" type="submit">Start your request <span aria-hidden="true">&rarr;</span></button>
         </form>
@@ -74,5 +89,6 @@
     <p>Made fresh daily, with a little extra heart.</p>
     <p>&copy; 2026 North Star Bakery</p>
   </footer>
+  <script src="contact.js" defer></script>
 </body>
 </html>
