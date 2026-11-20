@@ -1,6 +1,7 @@
 const form = document.querySelector("#preorder-form");
 
 if (form) {
+  form.noValidate = true;
   const fields = [...form.querySelectorAll("[required]")];
   const feedback = document.querySelector("#form-feedback");
   let hasSubmitted = false;
