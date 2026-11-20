@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900" role="img" aria-labelledby="title">
+  <title id="title">Fresh cinnamon loaf displayed on a bakery counter</title>
+  <rect width="1000" height="900" fill="#F5F7FA"/>
+  <path d="M0 620h1000v280H0z" fill="#1F3A5F"/>
+  <path d="M92 390h816v230H92z" fill="#4F8EF7" stroke="#1F3A5F" stroke-width="16"/>
+  <path d="M208 511c19-163 124-250 290-250s273 87 292 250l-15 93H223z" fill="#4F8EF7" stroke="#1F3A5F" stroke-width="16"/>
+  <path d="M306 466c39-78 103-117 192-117s154 39 193 117" fill="none" stroke="#1F3A5F" stroke-width="21" stroke-linecap="round"/>
+  <path d="M379 443c28-27 59-40 96-40 38 0 68 13 95 40 27 27 59 40 98 40" fill="none" stroke="#F5F7FA" stroke-width="20" stroke-linecap="round"/>
+  <path d="M448 492c31-26 62-39 95-39 28 0 54 9 78 27" fill="none" stroke="#1F3A5F" stroke-width="15" stroke-linecap="round"/>
+  <path d="M138 368c0-59 48-107 107-107s107 48 107 107" fill="none" stroke="#1F3A5F" stroke-width="15"/>
+  <circle cx="780" cy="193" r="68" fill="#4F8EF7"/>
+  <path d="M780 155v76M742 193h76" stroke="#1F3A5F" stroke-width="12" stroke-linecap="round"/>
+</svg>

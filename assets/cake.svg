@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title">
+  <title id="title">Layered celebration cake with piped frosting</title>
+  <rect width="720" height="500" fill="#F5F7FA"/>
+  <path d="M0 390h720v110H0z" fill="#1F3A5F"/>
+  <path d="M193 232h334v139H193z" fill="#4F8EF7" stroke="#1F3A5F" stroke-width="12"/>
+  <path d="M167 219h386v39H167z" fill="#F5F7FA" stroke="#1F3A5F" stroke-width="12"/>
+  <path d="M183 258h354M193 309h334" stroke="#1F3A5F" stroke-width="8"/>
+  <path d="M301 218v-42c0-31 26-57 59-57s59 26 59 57v42" fill="#4F8EF7" stroke="#1F3A5F" stroke-width="12"/>
+  <path d="M360 143v48M241 282v15M479 282v15" stroke="#F5F7FA" stroke-width="11" stroke-linecap="round"/>
+</svg>

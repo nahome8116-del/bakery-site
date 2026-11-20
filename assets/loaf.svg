@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title">
+  <title id="title">Cinnamon swirl loaf with a spiraled center</title>
+  <rect width="720" height="500" fill="#F5F7FA"/>
+  <path d="M0 390h720v110H0z" fill="#1F3A5F"/>
+  <path d="M110 358c10-129 105-200 250-200s240 71 250 200l-12 44H122z" fill="#4F8EF7" stroke="#1F3A5F" stroke-width="12"/>
+  <path d="M211 277c30-39 74-59 132-59s101 20 132 59c23 29 60 43 110 43" fill="none" stroke="#F5F7FA" stroke-width="17" stroke-linecap="round"/>
+  <path d="M257 304c20-21 49-31 86-31 34 0 61 10 82 30 20 19 44 29 73 29" fill="none" stroke="#1F3A5F" stroke-width="12" stroke-linecap="round"/>
+  <path d="M311 330c18-12 37-18 58-18" fill="none" stroke="#F5F7FA" stroke-width="10" stroke-linecap="round"/>
+</svg>

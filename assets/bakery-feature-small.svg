@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 580" role="img" aria-labelledby="title">
+  <title id="title">Cinnamon swirl loaf fresh from the oven</title>
+  <rect width="720" height="580" fill="#F5F7FA"/>
+  <path d="M0 430h720v150H0z" fill="#1F3A5F"/>
+  <path d="M100 385c12-108 92-170 220-170s210 62 224 170l-11 60H111z" fill="#4F8EF7" stroke="#1F3A5F" stroke-width="12"/>
+  <path d="M160 354c28-52 80-78 160-78s132 26 160 78" fill="none" stroke="#1F3A5F" stroke-width="16" stroke-linecap="round"/>
+  <path d="M230 343c19-20 40-30 65-30 28 0 48 10 65 30 18 20 40 30 66 30" fill="none" stroke="#F5F7FA" stroke-width="15" stroke-linecap="round"/>
+  <path d="M285 368c20-17 42-26 67-26 19 0 37 6 54 18" fill="none" stroke="#1F3A5F" stroke-width="11" stroke-linecap="round"/>
+  <circle cx="566" cy="152" r="52" fill="#4F8EF7"/>
+  <path d="M544 153h44M566 131v44" stroke="#1F3A5F" stroke-width="8" stroke-linecap="round"/>
+</svg>

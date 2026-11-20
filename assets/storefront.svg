@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title">
+  <title id="title">North Star Bakery downtown storefront</title>
+  <rect width="900" height="650" fill="#F5F7FA"/>
+  <path d="M0 545h900v105H0z" fill="#1F3A5F"/>
+  <path d="M97 234h706v311H97z" fill="#4F8EF7" stroke="#1F3A5F" stroke-width="16"/>
+  <path d="M73 221h754l-47-114H120z" fill="#1F3A5F"/>
+  <path d="M102 223h696v63H102z" fill="#4F8EF7"/>
+  <path d="M133 296h252v196H133zM515 296h252v196H515z" fill="#F5F7FA" stroke="#1F3A5F" stroke-width="13"/>
+  <path d="M259 296v196M641 296v196" stroke="#1F3A5F" stroke-width="11"/>
+  <path d="M390 329h120v216H390z" fill="#1F3A5F"/>
+  <path d="M412 350h76v100h-76z" fill="#4F8EF7"/>
+  <circle cx="483" cy="477" r="6" fill="#F5F7FA"/>
+  <path d="M194 198h512" stroke="#F5F7FA" stroke-width="12" stroke-dasharray="17 17"/>
+  <path d="M142 161h613" stroke="#4F8EF7" stroke-width="11"/>
+</svg>
