@@ -353,6 +353,11 @@ main { max-width: 1440px; margin: 0 auto; padding: 0 5vw 4rem; }
 }
 .form-feedback[hidden], .field-error[hidden] { display: none; }
 .field-error { margin: .3rem 0 0; color: var(--mist); font-size: .82rem; }
+.name-storage { margin: .8rem 0 .25rem; }
+.name-storage label { display: flex; align-items: center; gap: .55rem; margin-top: 0; cursor: pointer; }
+.name-storage input { width: 1.1rem; min-height: 1.1rem; margin: 0; accent-color: var(--blue); }
+.storage-feedback { min-height: 1.4em; margin: .35rem 0 0 1.65rem; color: var(--mist); font-size: .82rem; }
+.remove-saved-name { margin: .25rem 0 0 1.65rem; padding: 0; border: 0; background: transparent; color: var(--mist); font: 700 .82rem var(--sans); text-decoration: underline; text-decoration-color: var(--blue); cursor: pointer; }
 .form-note { margin: 1rem 0 .25rem; color: var(--mist); font-size: .78rem; }
 .order-panel .button { align-self: flex-start; margin-top: .8rem; border-color: var(--mist); background: var(--mist); color: var(--navy); }
 .order-panel .button:hover, .order-panel .button:focus-visible { border-color: var(--blue); background: var(--mist); }
