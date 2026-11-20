@@ -4,11 +4,85 @@ if (form) {
   form.noValidate = true;
   const fields = [...form.querySelectorAll("[required]")];
   const feedback = document.querySelector("#form-feedback");
+  const nameField = form.elements.namedItem("name");
+  const saveName = document.querySelector("#save-name");
+  const storageFeedback = document.querySelector("#storage-feedback");
+  const removeSavedName = document.querySelector("#remove-saved-name");
+  const nameKey = "north-star-bakery-name-v1";
+  const consentKey = "north-star-bakery-name-consent-v1";
   let hasSubmitted = false;
 
   const today = new Date();
   today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
   form.elements.namedItem("pickup-date").min = today.toISOString().slice(0, 10);
+
+  function saveNameToStorage() {
+    if (!saveName.checked) return;
+
+    try {
+      if (nameField.value.trim()) {
+        localStorage.setItem(nameKey, nameField.value);
+        removeSavedName.hidden = false;
+        storageFeedback.textContent = "Your name is saved on this device.";
+      } else {
+        localStorage.removeItem(nameKey);
+        removeSavedName.hidden = true;
+        storageFeedback.textContent = "Name saving is on. Enter your name to save it.";
+      }
+    } catch {
+      storageFeedback.textContent = "This browser couldn't save your name. It will not persist.";
+    }
+  }
+
+  function loadSavedName() {
+    try {
+      if (localStorage.getItem(consentKey) === "true") {
+        saveName.checked = true;
+        const savedName = localStorage.getItem(nameKey);
+        if (savedName) {
+          nameField.value = savedName;
+          removeSavedName.hidden = false;
+          storageFeedback.textContent = "Your saved name was restored from this device.";
+        } else {
+          storageFeedback.textContent = "Name saving is on. Enter your name to save it.";
+        }
+      }
+    } catch {
+      saveName.checked = false;
+      storageFeedback.textContent = "Your saved name couldn't be read from this browser.";
+    }
+  }
+
+  function removeNameFromStorage() {
+    try {
+      localStorage.removeItem(nameKey);
+      localStorage.removeItem(consentKey);
+      saveName.checked = false;
+      removeSavedName.hidden = true;
+      storageFeedback.textContent = "Your saved name was removed from this device.";
+    } catch {
+      storageFeedback.textContent = "Your saved name couldn't be removed from this browser.";
+    }
+  }
+
+  loadSavedName();
+  saveName.addEventListener("change", () => {
+    if (saveName.checked) {
+      try {
+        localStorage.setItem(consentKey, "true");
+        storageFeedback.textContent = "Name saving is on for this device.";
+        saveNameToStorage();
+      } catch {
+        saveName.checked = false;
+        storageFeedback.textContent = "This browser couldn't enable name saving.";
+      }
+    } else {
+      removeNameFromStorage();
+    }
+  });
+  nameField.addEventListener("input", saveNameToStorage);
+  nameField.addEventListener("change", saveNameToStorage);
+  removeSavedName.addEventListener("click", removeNameFromStorage);
 
   function getError(field) {
     if (!field.value.trim()) {
